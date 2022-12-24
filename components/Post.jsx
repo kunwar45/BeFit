@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import PostThumbnail from './PostThumbnail';
 
 export default function Post() {
   return (
     <View style={styles.postContainer}>
-      <Text style={styles.text}></Text>
+      <PostThumbnail imgSrc='assets/pushups.jpg'/>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,16 +14,16 @@ export default function Post() {
 const styles = StyleSheet.create({
   postContainer: {
     boxSizing: 'borderBox',
-    width: '90%',
-    height: '45%',
+    width: 343,
+    height: 383,
     backgroundColor: '#303144',
-    position: 'absolute',
+    
     borderWidth: 2,
     borderColor: 'white',
     borderRadius: 15,
-    justifyContent: 'center',
-    left: 21,
+
     top: 109,
+    marginBottom: 30,
   },
   text: {
     color: 'white',
