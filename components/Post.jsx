@@ -20,3 +20,20 @@ const styles = StyleSheet.create({
     color: 'white',
   },
 });
+
+/**
+ * /* Rectangle 1 
+
+box-sizing: border-box;
+
+position: absolute;
+width: 348px;
+height: 383px;
+left: 21px;
+top: 109px;
+
+background: #303144;
+border: 2px solid #FFFFFF;
+border-radius: 15px;
+
+ */
