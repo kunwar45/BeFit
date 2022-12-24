@@ -1,23 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Title() {
+export default function Post() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>GOOB</Text>
+    <View style={styles.postContainer}>
+      <Text style={styles.text}>Post</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-
-    height: 46,
-    // left: 112,
-    // top: 47,
-
-    // background: "#FFFFFF",
+  postContainer: {
+    width: 100,
+    height: 100,
+    backgroundColor: 'red',
   },
   text: {
     color: 'white',
