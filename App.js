@@ -1,23 +1,34 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Post from './components/Post';
+import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import Title from './components/Title';
+import Post from './components/Post';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Title/>
-      <Post/>
+      <ScrollView style={styles.scrollView} contentContainerStyle={styles.contentContainer}>
+        <Post/>
+        <Post/>
+        <Post/>
+        
+      </ScrollView>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: '#1D1E2C',
+    backgroundColor: '#1D1E2C',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  scrollView: {
+    width: '100%',
+  },
+  contentContainer: {
+    alignItems: 'center',
+  }
 });

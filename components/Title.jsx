@@ -12,14 +12,16 @@ export default function Title() {
 
 const styles = StyleSheet.create({
   container: {
-
+    position: 'absolute',
+    width: '100%',
     height: 46,
     // left: 112,
-    // top: 47,
-
-    // background: "#FFFFFF",
+    top: 47,
+    background: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   text: {
     color: 'white',
-  },
+  }
 });
