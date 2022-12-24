@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Post() {
   return (
     <View style={styles.postContainer}>
-      <Text style={styles.text}>Post</Text>
+      <Text style={styles.text}></Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -12,9 +12,17 @@ export default function Post() {
 
 const styles = StyleSheet.create({
   postContainer: {
-    width: 100,
-    height: 100,
-    backgroundColor: 'red',
+    boxSizing: 'borderBox',
+    width: '90%',
+    height: '45%',
+    backgroundColor: '#303144',
+    position: 'absolute',
+    borderWidth: 2,
+    borderColor: 'white',
+    borderRadius: 15,
+    justifyContent: 'center',
+    left: 21,
+    top: 109,
   },
   text: {
     color: 'white',
@@ -26,11 +34,10 @@ const styles = StyleSheet.create({
 
 box-sizing: border-box;
 
-position: absolute;
+p
 width: 348px;
 height: 383px;
-left: 21px;
-top: 109px;
+
 
 background: #303144;
 border: 2px solid #FFFFFF;
