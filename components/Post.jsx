@@ -5,7 +5,7 @@ import PostThumbnail from './PostThumbnail';
 export default function Post() {
   return (
     <View style={styles.postContainer}>
-      <PostThumbnail imgSrc='assets/pushups.jpg'/>
+      <PostThumbnail imgSrc='assets/images/pushups.jpg'/>
       <StatusBar style="auto" />
     </View>
   );
