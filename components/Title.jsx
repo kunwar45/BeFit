@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+
 export default function Title() {
   return (
     <View style={styles.container}>
-      <Text>GOOB</Text>
+      <Text style={styles.text}>GOOB</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -12,11 +13,17 @@ export default function Title() {
 
 const styles = StyleSheet.create({
   container: {
+    position: 'absolute',
     width: '100%',
     height: 46,
-    backgroundColor: 'blue',
-    color: 'white',
+    // left: 112,
+    top: 47,
+    background: '#FFFFFF',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    color: 'white',
+    fontSize: 40,
+  }
 });
