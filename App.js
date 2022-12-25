@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import Title from './components/Title';
-import Post from './components/Post';
+import Post from './components/Posts/Post';
 import Home from './screens/Home/Home';
+import IndividualPost from './screens/IndividualPost/IndividualPost';
 
 export default function App() {
   return (
-    <><Home/></>
+    <><IndividualPost/></>
   );
 }
 
