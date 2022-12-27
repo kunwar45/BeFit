@@ -4,10 +4,11 @@ import Title from './components/Title';
 import Post from './components/Posts/Post';
 import Home from './screens/Home/Home';
 import IndividualPost from './screens/IndividualPost/IndividualPost';
+import FriendsList from './screens/FriendsList/FriendsList';
 
 export default function App() {
   return (
-    <><IndividualPost/></>
+    <><FriendsList/></>
   );
 }
 
