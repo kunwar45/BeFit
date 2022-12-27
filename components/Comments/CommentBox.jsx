@@ -6,9 +6,9 @@ export default function CommentBox() {
   return (
     <View style={styles.commentContainer}>
         <Text>Comments</Text>
-        <IndividualComment/>
-        <IndividualComment/>
-        <IndividualComment/>
+        <IndividualComment title="first" body="hello"/>
+        <IndividualComment title="second" body="ghar"/>
+        <IndividualComment title="third." body="goob"/>
       <StatusBar style="auto" />
     </View>
   );
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 
     borderTopWidth: 2,
 
-    marginBottom: 30,
+    // marginBottom: 30,
   },
   text: {
     color: 'white',
