@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import Title from '../../components/Title';
+import ProfileBox from '../../components/Profiles/ProfileBox';
 
 export default function FriendsList() {
   return (
@@ -23,17 +24,16 @@ export default function FriendsList() {
             
 
             <SafeAreaView style={styles.friendsContainer}>
-            <Text>My fiend</Text>
+            <Text>My Friends</Text>
                 <ScrollView style={styles.scrollView}>
-                    <Text> Profile </Text>
-                    <Text> Profile </Text>
-                    <Text> Profile </Text>
-                    <Text> Profile </Text>
-                    <Text> Profile </Text>
-                    <Text> Profile </Text>
-                    
-
-                    
+                    <ProfileBox/>
+                    <ProfileBox/>
+                    <ProfileBox/>
+                    <ProfileBox/>
+                    <ProfileBox/>
+                    <ProfileBox/>
+                    <ProfileBox/>
+                   
                 </ScrollView>
             </SafeAreaView>
 
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         alignItems: 'center',
         top: 40,
+
 
     },
 
