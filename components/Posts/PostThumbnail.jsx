@@ -11,7 +11,7 @@ import React from 'react';
 export default function PostThumbnail({imgSrc}) {
   return (
     <View style={styles.postContainer}>
-      <Image style={styles.image} source={require('../assets/images/pushups.jpg')}/>
+      <Image style={styles.image} source={require('../../assets/images/pushups.jpg')}/>
       <StatusBar style="auto" />
     </View>
   );

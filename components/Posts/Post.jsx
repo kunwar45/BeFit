@@ -14,7 +14,7 @@ export default function Post() {
 const styles = StyleSheet.create({
   postContainer: {
     boxSizing: 'borderBox',
-    width: 343,
+    width: 348,
     height: 383,
     backgroundColor: '#303144',
     
