@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   postContainer: {
     boxSizing: 'borderBox',
     width: '100%',
-    height: '91%',
+    height: '100%',
 
     position: 'absolute',
     // borderWidth: 2,

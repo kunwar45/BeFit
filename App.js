@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
+
 //import Title from './components/Title';
 //import Post from './components/Posts/Post';
 
@@ -12,6 +13,7 @@ import NewPostPage from './screens/NewPostPage/NewPostPage';
 
 export default function App() {
   return (
+    <><NewPostPage/></>
     <><Home/></>
   );
 }
