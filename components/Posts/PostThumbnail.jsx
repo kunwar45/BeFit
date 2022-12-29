@@ -40,20 +40,3 @@ const styles = StyleSheet.create({
   }
 });
 
-/**
- /* image 1
-
-box-sizing: border-box;
-
-position: absolute;
-width: 348px;
-height: 348px;
-left: 21px;
-top: 109px;
-
-background: url(image.png);
-border: 2px solid #FFFFFF;
-border-radius: 15px;
-
-
- */

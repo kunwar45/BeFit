@@ -2,12 +2,16 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import PostThumbnail from './PostThumbnail';
 import Comment from '../Comments/CommentBox';
+import ProfileBox from '../Profiles/ProfileBox';
 
 export default function SinglePost() {
   return (
     <View style={styles.postContainer}>
       <View style={styles.thumbnailContainer}>
         <PostThumbnail/>
+        <View style={styles.profileContainer}>
+          <ProfileBox/>
+        </View>
       </View>
         <View style={styles.commentContainer}>
         <Comment/>
@@ -37,6 +41,10 @@ const styles = StyleSheet.create({
     width: "50%",
     height: "32.8%",
     top: 30,
+    alignItems: "center",
+  },
+  profileContainer: {
+    top: 160,
   },
   commentContainer: {
     top: 37,
@@ -44,18 +52,3 @@ const styles = StyleSheet.create({
   }
 });
 
-/**
- * /* Rectangle 1 
-
-box-sizing: border-box;
-
-p
-width: 348px;
-height: 383px;
-
-
-background: #303144;
-border: 2px solid #FFFFFF;
-border-radius: 15px;
-
- */
