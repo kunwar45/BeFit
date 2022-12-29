@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import Title from '../../components/Title';
 import Post from '../../components/Posts/Post';
 
-export default function Home() {
+export default function NewPostPage() {
   return (
     <View style={styles.container}>
       <Title/>
