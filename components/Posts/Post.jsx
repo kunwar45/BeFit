@@ -6,10 +6,12 @@ import PostThumbnail from './PostThumbnail';
 export default function Post() {
   return (
     <View style={styles.postContainer}>
+      <View style={styles.postThumbnailContainer}>
       <PostThumbnail imgSrc='assets/images/pushups.jpg'/>
-      <ProfileBox></ProfileBox>
-      <StatusBar style="auto" />
+      <ProfileBox/>
       <Text style={styles.text}>Comments...</Text>
+      </View>
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -32,6 +34,11 @@ const styles = StyleSheet.create({
     top: 290,
     left: 10,
     color: 'white',
+  },
+  postThumbnailContainer: {
+    width: "100%",
+    height: "91%",
+
   },
 });
 
