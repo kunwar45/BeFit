@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import Title from '../../components/Title';
-import Post from '../../components/Posts/Post';
+import NewPost from '../../components/Posts/NewPost';
 
-export default function Home() {
+
+export default function NewPostPage() {
   return (
     <View style={styles.container}>
       <Title/>
+      <NewPost/>
       
       <StatusBar style="auto" />
     </View>
