@@ -1,5 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, SafeAreaView, Pressable } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
+
+//import Title from './components/Title';
+//import Post from './components/Posts/Post';
 
 // Pages:
 import Home from './screens/HomePage/HomePage.jsx';
@@ -9,8 +12,9 @@ import NewPostPage from './screens/NewPostPage/NewPostPage';
 
 
 export default function App() {
-  return (          
-  <><NavBar/></>
+  return (
+    <><NewPostPage/></>
+    <><Home/></>
   );
 }
 
