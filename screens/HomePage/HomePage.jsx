@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import Title from '../../components/Title';
 import Post from '../../components/Posts/Post';
+import NavBar from '../../components/NavBar';
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
         <Post/>
         
       </ScrollView>
+
+      <NavBar/>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
