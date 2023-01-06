@@ -16,7 +16,7 @@ export default function Home() {
         
       </ScrollView>
 
-      <NavBar/>
+
       <StatusBar style="auto" />
     </SafeAreaView>
   );
